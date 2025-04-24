@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML + CSS Beginner Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      display: block;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+    .content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      width: 100%;
+    }
+    .content h2 {
+      border-left: 5px solid #4CAF50;
+      padding-left: 10px;
+    }
+    .card {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .card code {
+      font-weight: bold;
+    }
+    .section{
+        background-color: #e6f4ea;
+        padding: 10px;
+        margin: 10px;
+    }
+    .box1 {
+        background-color: #cfe3da;
+        padding: 20px;
+        margin: 10px;
+        font-weight: bold;
+      }
+  
+      .box2 {
+        background-color: #f4cccc;
+        padding: 0;
+        margin: 30px;
+        font-weight: bold;
+      }
+  
+      .flex-container {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+      }
+  
+      .flex-item1 {
+        background-color: #b6d7f0;
+        padding: 10px;
+      }
+  
+      .flex-item2 {
+        background-color: #b6f0b6;
+        padding: 10px;
+      }
+  
+      .experiment {
+        background-color: #e6f4ea;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+  
+      .code {
+        background-color: #d9e1f2;
+        padding: 5px;
+        font-family: monospace;
+      }
+  
+      .center-box {
+        border: 2px dashed green;
+        text-align: center;
+        padding: 20px;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+  
+      .alert-box {
+        background-color: #fff2cc;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      .footer{
+        background-color: #4c4747;
+        text-align: center;
+        color: white;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML + CSS Beginner Practice Guide</h1>
+    <p>Understand basic HTML tags and CSS properties</p>
+  </header>
+
+  <nav>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">Practice</a>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <h2>📘 HTML Basics</h2>
+
+      <div class="card"><code>&lt;html&gt;</code> — Root element that wraps entire HTML document.</div>
+      <div class="card"><code>&lt;head&gt;</code> — Contains metadata like title, links to CSS, charset.</div>
+      <div class="card"><code>&lt;body&gt;</code> — Visible part of HTML page.</div>
+      <div class="card"><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> — Headings, h1 is largest.</div>
+      <div class="card"><code>&lt;p&gt;</code> — Paragraph text.</div>
+      <div class="card"><code>&lt;div&gt;</code> — Generic container block.</div>
+      <div class="card"><code>&lt;span&gt;</code> — Inline container.</div>
+      <div class="card"><code>&lt;a href&gt;</code> — Hyperlink.</div>
+      <div class="card"><code>&lt;ul ol li&gt;</code> — Unorderedlist,Orderedlist and items.</div>
+      <div class="card"><code>&lt;table&gt;</code> — Table Structure with tr,th,td.</div>
+      
+      <h2>🎨 CSS Basics</h2>
+      <div class="card"><code>code</code>:Changes text color.</div>
+      <div class="card"><code>Background-color</code>:Sets Background.</div>
+      <div class="card"><code>Padding</code>:Space insides the element.</div>
+      <div class="card"><code>margin</code>:Space outside the element.</div>
+      <div class="card"><code>Border</code>:Adds outline around the element.</div>
+      <div class="card"><code>Font-size</code>:Controls the text-size.</div>
+      <div class="card"><code>Text-align</code>:Aligns-text.</div>
+      <div class="card"><code>Display</code>:Controls Layout(block,inline,flex).</div>
+      <div class="card"><code>Flex-box</code>:Layout system for flexible item.</div>
+      <div class="card"><code>Box-shadow</code>:Adds shadow around elements.</div>
+
+      <h2>🧠 Practice Examples</h2>
+      <div class="section">
+        Try modifying padding and margin values and observe changes
+      </div>
+      <div class="box1">
+        <strong>Box 1:</strong> Padding: 20px | Margin: 10px
+      </div>
+    
+      <div class="box2">
+        <strong>Box 2:</strong> Padding: 0 | Margin: 30px
+      </div>
+    
+      <div class="flex-container">
+        <div class="flex-item1">Flex Item 1</div>
+        <div class="flex-item2">Flex Item 2</div>
+      </div>
+    
+      <div class="experiment">
+        <span class="code">Experiment with <strong>text-align</strong>, <strong>font-size</strong>, and <strong>border-radius</strong>:</span>
+      </div>
+    
+      <div class="center-box">
+        Centered and styled text!
+      </div>
+    
+      <div class="alert-box">
+        Rounded corner alert box.
+      </div>
+      <div class="footer">
+    <footer>Made with ❤️ For Beginners | Practice Makes Perfect! </footer>
+  </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
